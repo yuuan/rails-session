@@ -1,0 +1,23 @@
+version: '3'
+
+tasks:
+  build:
+    desc: Build the rails-session binary
+    cmds:
+      - go build -o rails-session .
+
+  test:
+    desc: Run all tests
+    cmds:
+      - go test ./...
+
+  lint:
+    desc: Run standard Go linters (gofmt, go vet)
+    cmds:
+      - test -z "$(gofmt -l .)" || (gofmt -l . && exit 1)
+      - go vet ./...
+
+  fmt:
+    desc: Format Go source files with gofmt
+    cmds:
+      - gofmt -w .
