@@ -1,4 +1,4 @@
-module rails-session
+module github.com/yuuan/rails-session
 
 go 1.25.6
 

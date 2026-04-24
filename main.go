@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"rails-session/cmd"
+	"github.com/yuuan/rails-session/cmd"
 )
 
 func main() {

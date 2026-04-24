@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"rails-session/rails"
+	"github.com/yuuan/rails-session/rails"
 
 	"github.com/spf13/cobra"
 )

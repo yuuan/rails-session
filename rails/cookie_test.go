@@ -3,7 +3,7 @@ package rails_test
 import (
 	"testing"
 
-	"rails-session/rails"
+	"github.com/yuuan/rails-session/rails"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
