@@ -42,3 +42,18 @@ changelog:
       - '^docs:'
       - '^test:'
       - '^chore:'
+
+brews:
+  - name: rails-session
+    repository:
+      owner: yuuan
+      name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    directory: Formula
+    homepage: https://github.com/yuuan/rails-session
+    description: A CLI tool to decrypt and encrypt Rails session cookies (AES-256-GCM).
+    license: MIT
+    install: |
+      bin.install "rails-session"
+    test: |
+      system "#{bin}/rails-session", "--help"

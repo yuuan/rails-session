@@ -4,11 +4,19 @@ A CLI tool to decrypt and encrypt Rails session cookies (AES-256-GCM).
 
 ## Installation
 
+### Homebrew (macOS / Linux)
+
+```bash
+brew install yuuan/tap/rails-session
+```
+
+### Go install
+
 ```bash
 go install github.com/yuuan/rails-session@latest
 ```
 
-Or build from source:
+### Build from source
 
 ```bash
 git clone https://github.com/yuuan/rails-session.git
